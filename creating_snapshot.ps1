@@ -1,7 +1,7 @@
 # Criar Snapshot de todos os discos das VMs de um Resource Group
  
-$VmResourceGroup = 'DL-RG' # Nome do Resource Group das VMs
-$location = 'westus' # Localização dos Snapshots
+$VmResourceGroup = 'PUT-YOUR-RESOURCEGOUP-HERE' # Nome do Resource Group das VMs
+$location = 'PUT-YOUR-LOCATION-HERE' # Localização dos Snapshots
 
 # Pega todas as VMs do ResourceGroup, limpa linhas deixando apenas os nomes das VMs no arquivo all_vms.txt
 Get-AzVM -ResourceGroupName 'DL-RG' | Select-Object -Property Name >> vms_result.txt
